@@ -13,7 +13,7 @@ const appDiv = document.getElementById("app");
             inputElement.setAttribute("id", "userInput", );
             inputElement.setAttribute("type", "text");
             inputElement.setAttribute("placeholder", "Type or paste your text here ...");
-            inputElement.setAttribute("class", "p-4 text-2xl w-full rounded-2xl");
+            inputElement.setAttribute("class", "p-4 text-2xl w-[600px] rounded-2xl text-black");
 
             // converBtn.setAttribute("id", "convertBtn");
             inputElement.setAttribute("oninput", "convertFn()");
@@ -35,19 +35,25 @@ const appDiv = document.getElementById("app");
             const qtyNOCD = document.createElement("div");
         
             outputContainer.setAttribute("id", "outputContainer")
+            outputContainer.setAttribute("class", "mt-6 flex gap-16")
             numOfWordDiv.setAttribute("class", "outpuxDivStyle")
+            numOfWordDiv.setAttribute("class", "flex flex-col ")
             numOfCharDiv.setAttribute("class", "outpuxDivStyle")
         
             headingNOWD.innerHTML = "WORDS"
+            headingNOWD.setAttribute("class", "text-4xl text-center")
             qtyNOWD.innerHTML = 0;
             qtyNOWD.setAttribute("id", "wordQty")
+            qtyNOWD.setAttribute("class", "mt-2 text-4xl text-center")
 
             numOfWordDiv.append(headingNOWD)
             numOfWordDiv.append(qtyNOWD)
         
             headingNOCD.innerHTML = "CHARACTERS"
+            headingNOCD.setAttribute("class", "text-4xl text-center")
             qtyNOCD.innerHTML = 0;
             qtyNOCD.setAttribute("id", "charQty")
+            qtyNOCD.setAttribute("class", "mt-2 text-4xl text-center")
 
             numOfCharDiv.append(headingNOCD)
             numOfCharDiv.append(qtyNOCD)
